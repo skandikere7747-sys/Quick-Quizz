@@ -1,0 +1,175 @@
+/* ==========================
+   QuickQuiz App - style.css
+   ========================== */
+
+/* Global body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f6fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================
+   Form Containers (Login/Register)
+   ========================== */
+.form-container {
+    width: 260px;         /* narrower form */
+    margin: 60px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;      /* labels align left */
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Labels above inputs */
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="password"] {
+    width: 100%;       /* fill container */
+    padding: 8px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Submit buttons */
+input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Links below form */
+.form-container a {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #3498db;
+    text-decoration: none;
+}
+
+.form-container a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================
+   Quiz Container
+   ========================== */
+.quiz-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.quiz-container h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.quiz-container p {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.quiz-container label {
+    display: block;
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.quiz-container input[type="radio"] {
+    margin-right: 10px;
+}
+
+.quiz-container label:hover {
+    background-color: #f1f1f1;
+}
+
+/* ==========================
+   Profile Container
+   ========================== */
+.profile-container {
+    width: 260px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.profile-container h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 10px 0;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .form-container,
+    .quiz-container,
+    .profile-container {
+        width: 90%;
+        padding: 15px;
+    }
+}
